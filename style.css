@@ -61,16 +61,27 @@ ul{
     display: flex;
     flex-direction: row;
     gap:40px;
+    list-style: none;
+    height: 100%;
 }
 
-img{
+.card{
+    overflow: hidden;
     border-radius: 10px;
-    width: 160px;
-}
-
-img:hover{
+    max-width: 160px;
+    border: 1px solid transparent;
     cursor: pointer;
+}
+.card:hover{
     border: 1px solid white;
+}
+.card img{
+    width: 100%;
+    max-width: 160px;
+    transition: 1s;
+}
+.card img:hover{
+    transition: 1s;
     transform: scale(1.2);
 }
 .botao{
@@ -84,6 +95,7 @@ img:hover{
 }
 .botao:hover{
     cursor:pointer;
-    border: 3px solid white;
-    transform: scale(1.5);
+    border-color: black;
+    background-color: white;
+    color: black;
 }
